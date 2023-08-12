@@ -1,0 +1,5 @@
+D:\BaiTap\C_#\CuoiKy_CSDL\DTO\bin\Debug\DTO.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\DTO\bin\Debug\DTO.pdb
+D:\BaiTap\C_#\CuoiKy_CSDL\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\BaiTap\C_#\CuoiKy_CSDL\DTO\obj\Debug\DTO.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\DTO\obj\Debug\DTO.pdb

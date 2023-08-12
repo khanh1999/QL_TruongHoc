@@ -1,0 +1,9 @@
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\bin\Debug\getAllPhongBan.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\bin\Debug\getAllPhongBan.pdb
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\bin\Debug\DAL.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\bin\Debug\DTO.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\bin\Debug\DAL.pdb
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\bin\Debug\DTO.pdb
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\obj\Debug\getAllPhongBan.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\BUS\obj\Debug\getAllPhongBan.pdb

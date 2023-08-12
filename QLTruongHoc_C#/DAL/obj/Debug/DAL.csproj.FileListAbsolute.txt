@@ -1,0 +1,7 @@
+D:\BaiTap\C_#\CuoiKy_CSDL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\BaiTap\C_#\CuoiKy_CSDL\DAL\bin\Debug\DAL.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\DAL\bin\Debug\DAL.pdb
+D:\BaiTap\C_#\CuoiKy_CSDL\DAL\obj\Debug\DAL.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\DAL\obj\Debug\DAL.pdb
+D:\BaiTap\C_#\CuoiKy_CSDL\DAL\bin\Debug\DTO.dll
+D:\BaiTap\C_#\CuoiKy_CSDL\DAL\bin\Debug\DTO.pdb

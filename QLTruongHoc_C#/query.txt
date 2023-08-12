@@ -1,0 +1,88 @@
+CREATE TABLE phongban (MaPB VARCHAR(5) NOT NULL,TenPB nVARCHAR(45) NULL,PRIMARY KEY (MaPB));
+
+CREATE TABLE nhanvien (MaNV VARCHAR(5) NOT NULL,HoTen nVARCHAR(45) NOT NULL,NgaySinh DATE NOT NULL,GioiTinh nVARCHAR(10) NOT NULL,SDT VARCHAR(10) NULL,PhongBan VARCHAR(5) NOT NULL,PRIMARY KEY (MaNV));
+
+CREATE TABLE tomon (MaGV VARCHAR(5) NOT NULL,ChuyenMon nVARCHAR(45) NOT NULL,ChucVu nVARCHAR(45) NOT NULL,MaToTruong VARCHAR(10) NOT NULL,PRIMARY KEY (MaGV));
+
+CREATE TABLE lophoc (MaL VARCHAR(5) NOT NULL,TenL VARCHAR(45) NOT NULL,SiSo int NOT NULL,GVCN VARCHAR(5) NOT NULL,GVToan VARCHAR(5) NULL,GVLy VARCHAR(5) NULL,GVHoa VARCHAR(5) NULL,PRIMARY KEY (MaL));
+
+insert into NhanVien
+values ('NV01', N'Nguyên Minh Hoài', '04/12/1985', 'Nam','0931096070','GV'),
+       ('NV02', N'Trần Khắc Đan', '01/10/1980', 'Nam','0316163225','GV'),
+	   ('NV03', N'Lý Trần Khánh Như', '02/05/1990', N'Nữ','0931323214','GV'),
+	   ('NV04', N'Bùi Nam Kỳ', '04/21/1982', 'Nam','0905664124','GV'),
+	   ('NV05', N'Ngyễn Huỳnh Mai Chi', '10/22/1996', N'Nữ','0930220308','GV'),
+	   ('NV06', N'Doãn Hoài Nam', '03/25/1999', 'Nam','0932095040','GV'),
+	   ('NV07', N'Phan Minh Quân', '04/16/1994', 'Nam','0777919206','GV'),
+	   ('NV08', N'Võ Thùy Linh', '04/16/1997', N'Nữ','0685727236','GV'),
+	   ('NV09', N'Đỗ Thu Xuân', '06/30/1982', N'Nữ','0224212205','GV'),
+	   ('NV10', N'Trần Quỳnh Khả Như', '09/13/1995', N'Nữ','0143226522','GV'),
+	   ('NV11', N'Nguyễn Hồ Xuân Hương', '02/27/1992', N'Nữ','0143226522','GV'),
+	   ('NV12', N'Lý Tráng Sĩ', '01/03/1993', 'Nam','0143226522','BV'),
+	   ('NV13', N'Bùi Hùng Hậu', '07/14/1990', 'Nam','0143226522','BV'),
+	   ('NV14', N'Nguyễn Hỉnh', '10/28/1998', 'Nam','0143226522','BV');
+
+insert into PhongBan
+values ('GV', N'Giáo Viên'),
+	   ('BV', N'Bảo Vệ');
+
+select MaNV,HoTen,NgaySinh,GioiTinh,SDT,TenPB
+from NhanVien, PhongBan
+where NhanVien.PhongBan = PhongBan.MaPB
+go
+
+create proc getAllNhanVien
+as 
+begin
+	select MaNV,HoTen,NgaySinh,GioiTinh,SDT,TenPB
+	from NhanVien, PhongBan
+	where NhanVien.PhongBan = PhongBan.MaPB
+end
+go
+
+create proc getAllPhongBan
+as 
+begin
+	select *
+	from PhongBan
+end
+go
+
+insert into ToMon
+values ('NV06',N'Vật Lý',N'Hiệu trưởng',''),
+	   ('NV05',N'Hóa Học',N'Hiệu phó',''),
+	   ('NV01',N'Hóa Học',N'Giáo viên bộ môn','NV08'),
+	   ('NV02',N'Toán',N'Giáo viên bộ môn','NV07'),
+	   ('NV03',N'Vật Lý',N'Giáo viên bộ môn','NV11'),
+	   ('NV04',N'Hóa Học',N'Giáo viên bộ môn','NV08'),
+	   ('NV07',N'Toán',N'Tổ trưởng',''),
+	   ('NV08',N'Hóa Học',N'Tổ trưởng',''),
+	   ('NV09',N'Vật Lý',N'Giáo viên bộ môn','NV11'),
+	   ('NV10',N'Toán',N'Giáo viên bộ môn','NV07'),
+	   ('NV11',N'Vật Lý',N'Tổ trưởng','');
+go
+
+create proc getAllGiaoVien
+as 
+begin
+	select MaGV As 'Mã Giáo viên', HoTen AS 'Họ Tên', ChuyenMon as 'Chuyên môn', ChucVu As 'Chức vụ', MaToTruong as 'Mã Tổ trưởng'
+	from NhanVien, ToMon
+	where NhanVien.MaNV = ToMon.MaGV
+end
+go
+
+insert into LopHoc
+values ('L01','10A1',30,'NV01','NV07','NV03','NV01'),
+	   ('L02','10A2',35,'NV03','NV10','NV03','NV01'),
+	   ('L03','11A1',32,'NV02','NV02','NV11','NV04'),
+	   ('L04','11A2',40,'NV04','NV07','NV09','NV04'),
+	   ('L05','12A21',30,'NV09','NV02','NV09','NV08'),
+	   ('L06','12A2',42,'NV10','NV10','NV11','NV08');
+
+create proc getAllLopHoc1
+as 
+begin
+	select MaL as 'Mã Lớp',TenL as 'Tên Lớp',SiSo as 'Sỉ Số',GVCN,GVToan as 'GV Toán',GVLy as 'GV Lý',GVHoa as 'GV Hóa' 
+	from LopHoc
+end
+go
