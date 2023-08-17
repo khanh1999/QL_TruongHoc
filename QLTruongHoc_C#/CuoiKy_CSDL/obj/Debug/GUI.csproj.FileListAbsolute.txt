@@ -16,3 +16,6 @@ D:\BaiTap\C_#\CuoiKy_CSDL\CuoiKy_CSDL\obj\Debug\CuoiKy_CSDL.pdb
 D:\BaiTap\C_#\CuoiKy_CSDL\CuoiKy_CSDL\obj\Debug\CuoiKy_CSDL.Form2.resources
 D:\BaiTap\C_#\CuoiKy_CSDL\CuoiKy_CSDL\obj\Debug\CuoiKy_CSDL.Form3.resources
 D:\BaiTap\C_#\CuoiKy_CSDL\CuoiKy_CSDL\obj\Debug\CuoiKy_CSDL.Login.resources
+C:\Users\khiem\OneDrive\Máy tính\QL_TruongHoc\QLTruongHoc_C#\CuoiKy_CSDL\bin\Debug\CuoiKy_CSDL.exe.config
+C:\Users\khiem\OneDrive\Máy tính\QL_TruongHoc\QLTruongHoc_C#\CuoiKy_CSDL\obj\Debug\CuoiKy_CSDL.exe
+C:\Users\khiem\OneDrive\Máy tính\QL_TruongHoc\QLTruongHoc_C#\CuoiKy_CSDL\obj\Debug\CuoiKy_CSDL.pdb
