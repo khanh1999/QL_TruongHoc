@@ -14,11 +14,11 @@
 ### Thực hiện thao tác thêm mới nhân viên, ta điền đầy đủ thông tin cần nhập vào các textbox và ấn button "Thêm" để thực hiện thêm nhân viên mới:
 ![](pic/add_1.png)
 ![](pic/add_2.png)
-### Muốn chỉnh sửa thông tin, ta chỉ cần click vào đầu dòng nhân viên mà ta muốn sữa, toàn bộ thông tin của nhân viên đó sẽ được đưa lên các textbox tương ứng để thuận tiện trong việc chỉnh sửa thông tin:
+### Muốn chỉnh sửa thông tin, ta chỉ cần click vào đầu dòng nhân viên mà ta muốn sửa, toàn bộ thông tin của nhân viên đó sẽ được đưa lên các textbox tương ứng để thuận tiện trong việc chỉnh sửa thông tin:
 ![](pic/upload_1.png)
 ![](pic/upload_2.png)
 ![](pic/upload_3.png)
-### Để xóa nhân viên, ta chỉ cần click vào đầu dòng của nhân viên mag ta cần muốn và thực hiện button "Xóa"
+### Để xóa nhân viên, ta chỉ cần click vào đầu dòng của nhân viên mà ta cần muốn xóa và thực hiện button "Xóa"
 ![](pic/xoa.png)
 ### Đối với chức năng "Tìm kiếm" thì ta sẽ thực hiện tìm kiếm theo ký tự mà ta đã nhập ở textbox "Họ tên"
 ![](pic/timkiem.png)
